@@ -20,8 +20,8 @@ module "asg" {
   source            = "./modules/asg"
   lt_name           = "web-lt"
   asg_name          = "web-asg"
-  ami_id            = "ami-0c55b159cbfafe1f0" # Update this
-  instance_type     = "t3.micro"
+  ami_id            = "ami-0360c520857e3138f" # Update this
+  instance_type     = "t2.mini"
   security_group_id = module.security_group.sg_id
   subnet_ids        = module.vpc.public_subnets
   min_size          = 1
